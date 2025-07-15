@@ -1,23 +1,46 @@
 # 🐾 Pets Assistant
 
-A warm, conversational veterinary behavior assistant built with Streamlit and OpenAI.  
-“Pets Assistant” guides cat owners through a structured interview, gathering detailed behavioral information for a veterinary visit.
+**AI-powered veterinary behavior companion** built with Streamlit and OpenAI. Pets Assistant turns your cat’s behavioral history into a clear, actionable clinical summary—so you arrive at the vet fully prepared and confident.
+
+---
+
+## 📖 Description
+
+Pets Assistant guides you through a friendly, 10-question interview about your cat’s habits, quirks, and concerns. After each answer, it asks one empathetic, context-aware follow-up to capture every nuance. When the conversation is complete, you’ll get a one-paragraph summary that’s ready to print or share with your veterinarian—no more scrambling for details in the waiting room.
+
+**Why it matters:**  
+- **Clarity & Confidence**: Document your pet’s story precisely, reducing miscommunications at the clinic.  
+- **Efficiency**: Vet visits go smoother when you arrive with a structured behavioral report.  
+- **Customizable & Extensible**: Swap in your own questions or add new “tools” via decorated Python functions.  
 
 ---
 
 ## 🚀 Features
 
-- **Interactive Q&A** – Asks 10 core questions in a friendly, natural flow.  
-- **Empathetic Follow-Ups** – After each answer, prompts one intelligent, context-aware follow-up.  
-- **One-Paragraph Clinical Summary** – At the end, generates a concise summary ready for your vet.  
-- **Streamlit UI** – Slick chat interface with custom CSS “speech bubbles” and avatar emoji.  
-- **Extensible** – Add your own tools via `@function_tool` or swap in a different model.
+- **Interactive Q&A Flow**: Ten core questions + intelligent follow-ups  
+- **One-Paragraph Clinical Summary**: Ready for your vet in seconds  
+- **Streamlit Web UI**: Clean chat interface, custom “speech bubbles,” and fun avatar emoji  
+- **Easy Customization**: Edit `CORE_QS` in `PetAssistant.py` or add new `@function_tool` modules  
+- **Open Source & MIT-licensed**: Jump in, tweak, and contribute!
 
 ---
 
 ## 💻 Installation
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/your-username/pets-assistant.git
-   cd pets-assistant
+```bash
+git clone https://github.com/your-username/pets-assistant.git
+cd pets-assistant
+python -m venv venv
+# PowerShell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+. .\venv\Scripts\Activate.ps1
+# OR Command Prompt
+venv\Scripts\activate.bat
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+cp .env.example .env
+# Edit .env to add your OpenAI key:
+# OPENAI_API_KEY=your_openai_api_key_here
+
