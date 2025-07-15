@@ -1,0 +1,23 @@
+# 🐾 Pets Assistant
+
+A warm, conversational veterinary behavior assistant built with Streamlit and OpenAI.  
+“Pets Assistant” guides cat owners through a structured interview, gathering detailed behavioral information for a veterinary visit.
+
+---
+
+## 🚀 Features
+
+- **Interactive Q&A** – Asks 10 core questions in a friendly, natural flow.  
+- **Empathetic Follow-Ups** – After each answer, prompts one intelligent, context-aware follow-up.  
+- **One-Paragraph Clinical Summary** – At the end, generates a concise summary ready for your vet.  
+- **Streamlit UI** – Slick chat interface with custom CSS “speech bubbles” and avatar emoji.  
+- **Extensible** – Add your own tools via `@function_tool` or swap in a different model.
+
+---
+
+## 💻 Installation
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/your-username/pets-assistant.git
+   cd pets-assistant
